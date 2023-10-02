@@ -1,0 +1,10 @@
+node_modules/
+*.csv
+*.xls
+*.xlsx
+*.tsv
+*.zip
+__pycache__/
+node_modules/
+/notebooks/betinho/raw_data/voos(19-21)/Apache_parquet_files/
+/notebooks/betinho/reduced_data2/
