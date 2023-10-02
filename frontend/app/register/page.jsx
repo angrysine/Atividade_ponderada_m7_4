@@ -14,6 +14,7 @@ let handleRegister = () => {
     .then((response) => {
       console.log(response);
       toast.success("Register success");
+      window.location.href = "/login";
     })
     .catch((error) => {
       console.log(error);

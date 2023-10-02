@@ -16,6 +16,7 @@ let handleLogin = () => {
       window.localStorage.setItem("token", response.data.token);
       window.localStorage.setItem("username", username);
       toast.success("Register success");
+      window.location.href = "/dashboard";
     })
     .catch((error) => {
       console.log(error);

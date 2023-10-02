@@ -4,6 +4,9 @@ node_modules/
 *.xlsx
 *.tsv
 *.zip
+*.env
+.env/
+venv/
 __pycache__/
 node_modules/
 /notebooks/betinho/raw_data/voos(19-21)/Apache_parquet_files/
