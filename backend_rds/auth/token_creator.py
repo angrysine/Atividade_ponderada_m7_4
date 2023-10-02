@@ -16,7 +16,7 @@ def create_access_token(data: dict, expires_delta: timedelta = None):
 
 
 def verify_delta(decoded_jwt, delta: timedelta = timedelta(minutes=60)):
-    if datetime.utcnow() < datetime.fromtimestamp(decoded_jwt["exp"]):
+    if datetime.utcnow() > datetime.fromtimestamp(decoded_jwt["exp"]):
         raise Exception("Token expired")
     else:
         return True
