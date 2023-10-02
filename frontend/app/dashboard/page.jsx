@@ -6,7 +6,7 @@ export default function Main() {
   const [base64, setBase64] = useState("");
   useEffect(() => {
     axios
-      .post("http://127.0.0.1:8000/validate_token", {
+      .post("http://52.72.1.74:8000/validate_token", {
         token: localStorage.getItem("token"),
         username: localStorage.getItem("username"),
       })
@@ -14,7 +14,7 @@ export default function Main() {
         console.log(res.data.message);
         setLog(res.data.message);
       });
-    axios.get("http://127.0.0.1:8000/graph").then((res) => {
+    axios.get("http://52.72.1.74:8000/graph").then((res) => {
       console.log(res.data.message);
       setBase64(res.data.message);
     });

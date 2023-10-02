@@ -7,7 +7,7 @@ let handleRegister = () => {
   let password = document.getElementById("password").value;
   console.log(username, password);
   axios
-    .post("http://127.0.0.1:8000/add_user", {
+    .post("http://52.72.1.74:8000/add_user", {
       username: username,
       password: password,
     })
