@@ -15,7 +15,9 @@ router = APIRouter()
 
 @router.post("/add_user", tags=["user"])
 async def create_user(request: Request):
+
     try:
+        
         data = await request.json()
         salt = bcrypt.gensalt()
 

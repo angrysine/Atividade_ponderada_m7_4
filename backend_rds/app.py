@@ -5,6 +5,10 @@ from dotenv import load_dotenv
 import os
 from routers.data import router as data_router
 from routers.user import router as user_router
+from fastapi.middleware.cors import CORSMiddleware
+origins = [
+    "*"
+]
 
 load_dotenv("./.env")
 
@@ -17,6 +21,13 @@ print("host: ", host, "port: ", port, "database: ", database, "user: ", user, "p
 
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["POST","GET"],
+    allow_headers=["*"],
+)
 app.include_router(data_router)
 app.include_router(user_router)
 
