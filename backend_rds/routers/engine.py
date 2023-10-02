@@ -17,5 +17,5 @@ conf ={
     'user':user,
     'password': password
 }
-# engine = create_engine(f"postgresql://{user}:{password}@{host}:{port}/{database}")
-engine = create_engine("sqlite:///data.db")
+engine = create_engine(f"postgresql://{user}:{password}@{host}:{port}/{database}")
+# engine = create_engine("sqlite:///data.db")
