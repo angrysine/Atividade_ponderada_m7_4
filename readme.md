@@ -52,3 +52,4 @@ Também é necessario adicionar uma regra de entrada a sua instância do tipo ud
 O comando python3 migration.py cria as tabelas necessárias para o funcionamento do sistema e deve ser realizado durante o setup do backend.
 
 ### vídeo de demonstração
+[link](https://github.com/angrysine/Atividade_ponderada_m7_4/blob/main/whatsapp-video-2023-10-02-at-101333_X6FfW7zJ.mp4)
