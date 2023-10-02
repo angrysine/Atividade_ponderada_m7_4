@@ -7,7 +7,7 @@ from routers.engine import conf
 print(conf)
 
 if __name__ == '__main__':
-    # engine = create_engine("sqlite:///data.db")
+    engine = create_engine("sqlite:///data.db")
 
-    engine = create_engine("postgresql://{user}:{password}@{host}:{port}/{database}".format(**conf))
+    # engine = create_engine("postgresql://{user}:{password}@{host}:{port}/{database}".format(**conf))
     Base.metadata.create_all(engine)
